@@ -38,20 +38,15 @@ Kitematic users can launch the container directly from its interface.
 
 ### Without Kitematic
 
-Linux users just need to build and start the Docker image:
+#### With the Quay.io image
+
+The docker-galaxy-sniplay images is hosted in [Quay.io](https://quay.io), a container hosting company
+
+You just need to start the Docker image:
 
 ```
-$ docker build -t galaxy-sniplay .
+$ docker run -p 8080:80 quay.io/valentinmarcon/docker-galaxy-sniplay
 ```
-
-```
-$ docker run -d -p 8080:80 galaxy-sniplay
-```
-
-- `docker build` create an image of the container from the Dockerfile recipe of the repository
-
-- `galaxy-sniplay` is the Image/Container name.
-
 - `docker run` starts the Image/Container
 
    In case the Container is not already stored locally, docker downloads it automatically
@@ -63,13 +58,38 @@ $ docker run -d -p 8080:80 galaxy-sniplay
 
 - `-d` will start the docker container in Daemon mode.
 
-  For an interactive session, one executes:
+- `quay.io/valentinmarcon/docker-galaxy-sniplay` is the Image/Container name.
 
-  ```
-  $ docker run -i -t -p 8080:80 galaxy-sniplay /bin/bash
-  ```
+#### With the Dockerfile recipe of this repository
 
-  and manually invokes the `startup` script to start PostgreSQL, Apache and Galaxy.
+You need to build and start the Docker image.
+
+*Build:*
+
+```
+$ cd docker-galaxy-sniplay
+$ docker build -t galaxy-sniplay .
+```
+
+- `docker build` create an image of the container from the Dockerfile recipe of the repository
+
+- `galaxy-sniplay` is the Image/Container name.
+
+*Start:*
+
+```
+$ docker run -d -p 8080:80 galaxy-sniplay
+```
+
+---
+
+For an interactive session, one executes:
+
+```
+$ docker run -i -t -p 8080:80 quay.io/valentinmarcon/docker-galaxy-sniplay /bin/bash
+```
+
+and manually invokes the `startup` script to start PostgreSQL, Apache and Galaxy.
 
 A detailed discussion of Docker's parameters is given in the [Docker manual](http://docs.docker.io/). 
 
@@ -78,7 +98,7 @@ Docker images are "read-only". All changes during one session are lost after res
 To install Tool Shed repositories or to save your data, you need to export the calculated data to the host computer. Fortunately, this is as easy as:
 
 ```
-$ docker run -d -p 8080:80 -v /home/user/galaxy_storage/:/export/ galaxy-sniplay
+$ docker run -d -p 8080:80 -v /home/user/galaxy_storage/:/export/ quay.io/valentinmarcon/docker-galaxy-sniplay
 ```
 
 Given the additional `-v /home/user/galaxy_storage/:/export/` parameter, docker will mount the folder `/home/user/galaxy_storage` into the Container under `/export/`. A `startup.sh` script, that is usually starting Apache, PostgreSQL and Galaxy, will recognize the export directory with one of the following outcomes:
