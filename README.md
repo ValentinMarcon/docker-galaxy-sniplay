@@ -3,9 +3,9 @@ Sniplay 3 complete Workflow on Docker
 
 SNiPlay3 complete workflow: a package for exploration and large scale analyses of SNP polymorphisms (filtering, SNP density, diversity, linkagedisequilibrium) (Dereeper et al, 2015)
 
-[<img align="left" src="src/img/sniplay.png" height="50px" alt="Sniplay" valign="middle">](http://sniplay.southgreen.fr/cgi-bin/home.cgi)
-[<img align="center" src="src/img/southgreen.png" height="50px" alt="SouthGreen" valign="middle">](http://www.southgreen.fr/)
-[<img align="right" src="src/img/welcome_image_snip.png" height="50px" alt="SniplayDocker" valign="middle">](http://sniplay.southgreen.fr/cgi-bin/home.cgi)
+[<img align="left" src="src/img/sniplay.png" height="100px" alt="Sniplay" valign="middle">](http://sniplay.southgreen.fr/cgi-bin/home.cgi)
+[<img align="center" src="src/img/southgreen.png" height="100px" alt="SouthGreen" valign="middle">](http://www.southgreen.fr/)
+[<img align="right" src="src/img/welcome_image_snip.png" height="100px" alt="SniplayDocker" valign="middle">](http://sniplay.southgreen.fr/cgi-bin/home.cgi)
 
 *This documentation is mostly inspired by the [galaxy-rna-workbench documentation](https://github.com/bgruening/galaxy-rna-workbench) hosted by [Björn Grüning](https://github.com/bgruening).*
 
@@ -15,7 +15,6 @@ SNiPlay3 complete workflow: a package for exploration and large scale analyses o
   - [Users and passwords](#users-and-passwords)
 - [Available tools](#available-tools)
   - [Tools](#tools)
-    - [Sniplay](#sniplay)
   - [Workflow](#workflow)
 - [Contributors](#contributors)
 
@@ -151,7 +150,8 @@ Name | Description
 --- | --- 
 [sniplay3_complete_workflow](https://toolshed.g2.bx.psu.edu/view/dereeper/sniplay3_complete_workflow/) | SNiPlay3 complete workflow: a package for exploration and large scale analyses of SNP polymorphisms (filtering, density, vcftools, diversity, linkagedisequilibrium, GWAS) (all SNiPlay3 components) 
 
-[<img align="left" src="workflow.png" height="50px" alt="Sniplay" valign="middle">](https://toolshed.g2.bx.psu.edu/view/dereeper/sniplay3_complete_workflow/)
+
+[<img src="/src/img/workflow.png" height="400px" alt="Sniplay" >](https://toolshed.g2.bx.psu.edu/view/dereeper/sniplay3_complete_workflow/)
 
 <p align="right"><a href="#top">&#x25B2; back to top</a></p>
 
