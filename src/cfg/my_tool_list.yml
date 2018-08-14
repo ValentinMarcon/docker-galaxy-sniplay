@@ -10,3 +10,9 @@ tools:
   tool_shed_url: https://toolshed.g2.bx.psu.edu
   revisions:
   - b9f2901a4b00
+- name: haplotype_analysis_workflow
+  owner: dereeper
+  tool_panel_section_id: 'section_sniplay'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+  - bd20187f16c5

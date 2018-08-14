@@ -1,8 +1,9 @@
 # SNiPlay Workflow Galaxy container
 #
 # Galaxy - sniplay3_complete_workflow
+# Galaxy - haplotype_analysis_workflow
 #
-# Version 0.1 
+# Version 0.2 
 #
 # From Björn A. Grüning galaxy docker image
 FROM bgruening/galaxy-stable
@@ -33,6 +34,7 @@ EXPOSE :8800
 # Install the workflow
 RUN mkdir -p $GALAXY_HOME/workflows
 ADD src/cfg/Galaxy-Workflow-SNiPlay.ga $GALAXY_HOME/workflows/ 
+ADD src/cfg/Galaxy-Workflow-Haplotype_analysis.ga $GALAXY_HOME/workflows/
 RUN startup_lite && \
     galaxy-wait && \
     workflow-install --workflow_path $GALAXY_HOME/workflows/ -g http://localhost:8080 -u $GALAXY_DEFAULT_ADMIN_USER -p $GALAXY_DEFAULT_ADMIN_PASSWORD

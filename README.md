@@ -1,9 +1,13 @@
-Sniplay 3 complete Workflow on Docker
-=====================================
+SNP analysis Workflows on Docker
+================================
 
-SNiPlay3 complete workflow: a package for exploration and large scale analyses of SNP polymorphisms (filtering, SNP density, diversity, linkagedisequilibrium) (Dereeper et al, 2015)
+**This container present two workflows:**
+
+- SNiPlay3 complete workflow: a package for exploration and large scale analyses of SNP polymorphisms (filtering, SNP density, diversity, linkagedisequilibrium) (Dereeper et al, 2015)
+- Haplotype analysis workflow 
 
 [<img align="left" src="src/img/sniplay.png" height="100px" alt="Sniplay" valign="middle">](http://sniplay.southgreen.fr/cgi-bin/home.cgi)
+[<img align="left" src="src/img/haplophyle.png" height="100px" alt="Haplophyle" valign="middle">](http://southgreen.fr/content/haplophyle-tool)
 [<img align="center" src="src/img/southgreen.png" height="100px" alt="SouthGreen" valign="middle">](http://www.southgreen.fr/)
 [<img align="right" src="src/img/welcome_image_snip.png" height="100px" alt="SniplayDocker" valign="middle">](http://sniplay.southgreen.fr/cgi-bin/home.cgi)
 
@@ -141,6 +145,9 @@ Tool | Description | Owner
 [SnpSift Filter](https://toolshed.g2.bx.psu.edu/view/iuc/snpsift/) |  Filter variants using arbitrary expressions (from  Pablo Cingolani) | iuc 
 [Tassel](https://toolshed.g2.bx.psu.edu/view/dereeper/tassel5/) | Evaluate traits associations, evolutionary patterns, and linkage disequilibrium | dereeper
 [VCFtools Filter,Stats,Diversity](https://toolshed.g2.bx.psu.edu/view/dereeper/vcftools_filter_stats_diversity/) | Subset of VCFtools fonctionalities : Filtering, Statistics, Diversity (slidingWindow) | dereeper
+[beagle](https://toolshed.g2.bx.psu.edu/view/dereeper/beagle/) | Performs genotype calling, genotype phasing, imputation of ungenotyped markers, and identity-by-descent segment detection  | dereeper
+[haplophyle](https://toolshed.g2.bx.psu.edu/view/dereeper/haplophyle/) | Create haplotype network from haplotype sequences  | dereeper
+[cytoscape](https://toolshed.g2.bx.psu.edu/view/dereeper/cytoscape/) |  Visualize interaction networks from JSON file  | dereeper
  | | 
 [Sniplay](https://toolshed.g2.bx.psu.edu/view/dereeper/sniplay/) | SNiPlay3: a package for exploration and large scale analyses of SNP polymorphisms (filtering, density, vcftools, diversity, linkagedisequilibrium, GWAS) (does not include external tools) | dereeper
 
@@ -164,14 +171,15 @@ Tool | Description
 
 <p align="right"><a href="#top">&#x25B2; back to top</a></p>
 
-## Workflow
+## Workflows
 
 Name | Description 
 --- | --- 
 [sniplay3_complete_workflow](https://toolshed.g2.bx.psu.edu/view/dereeper/sniplay3_complete_workflow/) | SNiPlay3 complete workflow: a package for exploration and large scale analyses of SNP polymorphisms (filtering, density, vcftools, diversity, linkagedisequilibrium, GWAS) (all SNiPlay3 components) 
+[haplotype_analysis_workflow](https://toolshed.g2.bx.psu.edu/view/dereeper/haplotype_analysis_workflow/) |  Haplotype analysis workflow 
 
-
-[<img src="/src/img/workflow.png" height="400px" alt="Sniplay" >](https://toolshed.g2.bx.psu.edu/view/dereeper/sniplay3_complete_workflow/)
+[<img src="/src/img/workflow_sniplay.png" height="400px" alt="Sniplay" >](https://toolshed.g2.bx.psu.edu/view/dereeper/sniplay3_complete_workflow/)
+[<img src="/src/img/workflow_haplotype.png" height="400px" alt="Haplotype" >](https://toolshed.g2.bx.psu.edu/view/dereeper/haplotype_analysis_workflow/)
 
 <p align="right"><a href="#top">&#x25B2; back to top</a></p>
 
