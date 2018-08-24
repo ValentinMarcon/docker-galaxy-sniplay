@@ -16,3 +16,9 @@ tools:
   tool_shed_url: https://toolshed.g2.bx.psu.edu
   revisions:
   - bd20187f16c5
+- name: sniplay3_gwas_workflow 
+  owner: dereeper
+  tool_panel_section_id: 'section_sniplay'
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+  revisions:
+  - 8aba23fae548

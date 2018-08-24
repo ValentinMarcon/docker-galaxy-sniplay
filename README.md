@@ -4,13 +4,15 @@ SNP analysis Workflows on Docker
 [<img src="src/img/southgreen.png" height="100px" alt="SouthGreen" valign="middle">](http://www.southgreen.fr/)
 [<img src="src/img/welcome_image_snip.png" height="100px" alt="SniplayDocker" valign="middle">](http://sniplay.southgreen.fr/cgi-bin/home.cgi)
 
-**This container present two workflows:**
+**This container present three workflows:**
 
 - SNiPlay3 complete workflow: a package for exploration and large scale analyses of SNP polymorphisms (filtering, SNP density, diversity, linkagedisequilibrium) (Dereeper et al, 2015)
 - Haplotype analysis workflow 
+- SNiPlay3 GWAS workflow: Tassel-based GWAS workflow (GLM model) including population structure and correction for structure (Dereeper et al, 2015) 
 
-[<img src="src/img/sniplay.png" height="100px" alt="Sniplay" valign="middle">](http://sniplay.southgreen.fr/cgi-bin/home.cgi)
+[<img src="src/img/sniplay.png" height="100px" alt="Sniplay" valign="reft">](http://sniplay.southgreen.fr/cgi-bin/home.cgi)
 [<img src="src/img/haplophyle.png" height="100px" alt="Haplophyle" valign="middle">](http://southgreen.fr/content/haplophyle-tool)
+[<img src="src/img/gwas.png" height="100px" alt="GWAS" valign="right">](http://sniplay.southgreen.fr/cgi-bin/home.cgi)
 
 *This documentation is mostly inspired by the [galaxy-rna-workbench documentation](https://github.com/bgruening/galaxy-rna-workbench) hosted by [Björn Grüning](https://github.com/bgruening).*
 
@@ -183,9 +185,15 @@ Name | Description
 
 Name | Description 
 --- | --- 
-[haplotype_analysis_workflow](https://toolshed.g2.bx.psu.edu/view/dereeper/haplotype_analysis_workflow/) |  Haplotype analysis workflow 
+[haplotype_analysis_workflow](https://toolshed.g2.bx.psu.edu/view/dereeper/haplotype_analysis_workflow/) | Haplotype analysis workflow 
 
 [<img src="/src/img/workflow_haplotype.png" height="400px" alt="Haplotype" >](https://toolshed.g2.bx.psu.edu/view/dereeper/haplotype_analysis_workflow/)
+
+Name | Description 
+--- | --- 
+[sniplay3_gwas_analysis_workflow](https://toolshed.g2.bx.psu.edu/view/dereeper/sniplay3_gwas_workflow/) | SNiPlay3 GWAS workflow 
+
+[<img src="/src/img/workflow_gwas.png" height="400px" alt="gwas" >](https://toolshed.g2.bx.psu.edu/view/dereeper/sniplay3_gwas_workflow/)
 
 <p align="right"><a href="#top">&#x25B2; back to top</a></p>
 
